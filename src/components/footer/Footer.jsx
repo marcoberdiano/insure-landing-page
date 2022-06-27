@@ -8,7 +8,7 @@ import patternFooterMobile from '../../images/bg-pattern-footer-mobile.svg';
 
 const Footer = () => {
     return ( 
-        <div className="footer-container">
+        <footer className="footer-container">
             <img className='footer-img' src={patternFooter} alt="pattern footer" />
             <img className='footer-img-mobile' src={patternFooterMobile} alt="pattern footer" />
             <div className='footer-social'>
@@ -56,7 +56,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </footer>
      );
 }
  

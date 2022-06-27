@@ -4,7 +4,7 @@ import people from '../../images/icon-people-first.svg'
 
 const Main = () => {
     return (
-        <> 
+        <main> 
         <section className="advantage-container">
             <h1 className="title advantage-title">We're different</h1>
             
@@ -45,7 +45,7 @@ const Main = () => {
             <h1 className='text'>Find out more <br/> about how we work</h1>
             <button className='btn'>How we work</button>
         </section>
-        </>
+        </main>
      );
 }
  
