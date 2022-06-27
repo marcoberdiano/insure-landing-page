@@ -1,0 +1,110 @@
+.footer-container{
+    position: relative;
+    padding: 5em;
+    background-color: $VeryLightGray;
+    .footer-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 34em;
+    }
+
+    .footer-img-mobile{
+        display: none;
+    }
+    .footer-social{
+        padding-bottom: 2.5em;
+        border-bottom: 1px solid #E4E4E4;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            z-index: 1;
+        }
+        .flex{
+            display: flex;
+            gap: 15px;
+        }
+        .social-links{
+            .social{
+                cursor: pointer;
+                z-index: 1;
+                &:hover path{
+                    fill: $VeryDarkViolet;
+                }
+            }
+        }
+        
+    }
+
+    .footer-links{
+        margin-top: 2em;
+        display: flex;
+        justify-content: flex-start;
+        
+        .links{
+            font-weight: 700;
+            font-size: 15px;
+            font-family: $Karla;
+            text-transform: uppercase;
+            width: 33%;
+            color: $VeryDarkViolet;
+            p{
+                margin-bottom: 25px;
+                color: $DarkGrayishViolet;
+            }
+            ul{
+                list-style: none;
+                li{
+                    width: fit-content;
+                    cursor: pointer;
+                    padding: 5px 0px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 824px) {
+    .footer-container{
+        text-align: center;
+        padding: 5em 0em;
+        .footer-img{
+            display: none;
+        }
+
+        .footer-img-mobile{
+            display: block;
+            position: absolute;
+            top:0;
+            width: 100%;
+        }
+
+        .footer-social{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer-links{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .links{
+                p{
+                    margin-top: 2em;
+                }
+                ul{
+                    li{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

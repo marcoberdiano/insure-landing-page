@@ -1,0 +1,100 @@
+.nav{
+    position: relative;
+    .icon-hamburger{
+        display: none;
+    }
+    
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 5em;
+
+        .desktop-menu{
+            .nav-links{
+                font-family: $Karla;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+                .nav-link {
+                    margin: 0px 15px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    color: $DarkGrayishViolet;
+                    &:hover{
+                        color: $VeryDarkViolet;
+                    }
+                    
+                }
+                .view-plans{
+                    color: #000;
+                    padding: 10px 20px;
+                    border: 2px solid #000;
+                    &:hover{
+                        color: $VeryLightGray;
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 759px) {
+    .nav{
+        position: relative;
+        .icon-hamburger{
+            display: block;
+        }
+        .desktop-menu{
+            display: none;
+        }
+        .nav-container{
+            padding: 1em 2em;
+        }
+        .mobile-menu{
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            height: 100vh;
+            background-color: $VeryDarkViolet;
+
+            .nav-links{
+                padding: 15px 0px;
+                font-family: $Karla;
+                color: $VeryLightGray;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .nav-link {
+                    cursor: pointer;
+                    padding: 1em 0px;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: $DarkGrayishViolet;
+                    }
+                }
+                .view-plans {
+                    text-align: center;
+                    border: 1px solid $VeryLightGray;
+                    width: 70%;
+                    &:hover{
+                        color: $VeryDarkViolet;
+                        background-color: $VeryLightGray;
+                    }
+                }
+            }
+        }
+    }
+}
