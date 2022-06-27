@@ -7,7 +7,7 @@ import imgHeroMobile from '../../images/image-intro-mobile.jpg';
 
 const Hero = () => {
     return ( 
-        <div className="hero-container">
+        <header className="hero-container">
             
             <div className="hero-left">
                 <h1 className='title hero-title'>Humanizing <br /> your insurance.</h1>
@@ -26,7 +26,7 @@ const Hero = () => {
                 <img className='img-hero' src={imgHero} alt="hero" />
                 <img className='img-hero-mobile' src={imgHeroMobile} alt="hero mobile" />
             </div>
-        </div>
+        </header>
      );
 }
  
